@@ -1,0 +1,12 @@
+{
+    "type": "layer-list",
+    "items": [
+        {
+            "type": "shape",
+            "shape": "rectangle",
+            "solid": {
+                "color": "#2895F1"
+            }
+        }
+    ]
+}

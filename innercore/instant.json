@@ -1,0 +1,30 @@
+{
+  "environment":{
+    "informative_progress":true,
+    "immersive_mode":true,
+    "auto_launch":false,
+    "auto_launch_override":false,
+    "abort_ability":true
+  },
+  "background":{
+    "shuffle_art":true,
+    "frame_duration":90,
+    "smooth_movement":true,
+    "force_fullscreen":true,
+    "brightness":0.4
+  },
+  "recycler":{
+    "measure_to_bottom":true,
+    "width_modifier":1.15,
+    "card_padding":true,
+    "card_radius_modifier":8
+  },
+  "distribution":{
+    "had_minecraft":false,
+    "dismiss_warning":false
+  },
+  "advertisement":{
+    "support_modification":true,
+    "block_everything":false
+  }
+}

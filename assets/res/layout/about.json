@@ -1,0 +1,118 @@
+{
+    "type": "LinearLayout",
+    "orientation": "horizontal",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "children": [
+        {
+            "type": "LinearLayout",
+            "layout_width": "0dp",
+            "layout_height": "match_parent",
+            "layout_weight": "1",
+            "orientation": "vertical",
+            "layout_gravity": "bottom",
+            "paddingLeft": "5dp",
+            "background": "#ffffff",
+            "children": [
+                {
+                    "type": "LinearLayout",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginLeft": "8dp",
+                    "layout_marginRight": "8dp",
+                    "layout_marginBottom": "10dp",
+                    "orienation": "horizontal",
+                    "children": [
+                        {
+                            "type": "ImageView",
+                            "layout_width": "40dp",
+                            "layout_height": "40dp",
+                            "layout_gravity": "center_vertical",
+                            "src": "@drawable/innercore"
+                        },
+                        {
+                            "type": "TextView",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "layout_marginStart": "10dp",
+                            "gravity": "center_vertical",
+                            "layout_gravity": "center_vertical",
+                            "textColor": "black",
+                            "textSize": "18sp",
+                            "text": "@string/about"
+                        }
+                        
+                    ]
+                },      
+                {
+                    "type": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "1dp",
+                    "background": "#d9d9d9"
+                },
+                {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center_vertical | start",
+                    "padding": "10dp",
+                    "paddingStart": "18dp",
+                    "text": "@string/preferences",
+                    "tag": "preferences",
+                    "textColor": "black",
+                    "textSize": "14sp"
+                },
+                {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center_vertical | start",
+                    "padding": "10dp",
+                    "paddingStart": "18dp",
+                    "text": "@string/links",
+                    "tag": "links",
+                    "textColor": "black",
+                    "textSize": "14sp"
+                },
+                {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center_vertical | start",
+                    "padding": "10dp",
+                    "paddingStart": "18dp",
+                    "text": "@string/credits",
+                    "tag": "credits",
+                    "textColor": "black",
+                    "textSize": "14sp"
+                },
+                {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center_vertical | start",
+                    "padding": "10dp",
+                    "paddingStart": "18dp",
+                    "text": "@string/about",
+                    "tag": "about",
+                    "textColor": "black",
+                    "textSize": "14sp"
+                }
+            ]
+        },
+        {
+            "type": "View", 
+            "layout_width": "1dp",
+            "layout_height": "match_parent",
+            "background": "#d9d9d9"
+        },
+        {
+            "type": "FrameLayout",
+            "json_id": "container",
+            "layout_width": "0dp",
+            "layout_height": "match_parent",
+            "layout_weight": "3",
+            "orientation": "vertical"
+        }
+    ]
+}

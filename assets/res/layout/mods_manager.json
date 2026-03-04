@@ -1,0 +1,26 @@
+{
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "orientation": "horizontal",
+    "children": [
+        {
+            "type": "include",
+            "name": "side_panel"
+        },
+        {
+            "type": "View", 
+            "layout_width": "1dp",
+            "layout_height": "match_parent",
+            "background": "#d9d9d9"
+        },
+        {
+            "type": "FrameLayout",
+            "json_id": "container",
+            "layout_width": "0dp",
+            "layout_height": "match_parent",
+            "layout_weight": "3",
+            "orientation": "vertical"
+        }
+    ]
+}

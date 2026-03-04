@@ -1,0 +1,337 @@
+{
+    "description": {
+        "en": "Here you can find all Inner Core settings.\n",
+        "ru": "Тут вы можете найти все настройки Inner Core.\n",
+        "zh": "这里你可以找到所有 Inner Core 设置。\n"
+    },
+
+    "properties": {
+        "disable_loading_screen": {
+            "name": {
+                "en": "Disable Loading Screen",
+                "ru": "Отключить экран загрузки",
+                "zh": "禁用加载屏幕"
+            },
+            "description": {
+                "en": "If on, loading screen is not displayed when mods are run, may speed up loading on some devices",
+                "ru": "Если опция включена, экран загрузки не отображается, когда загружаются моды, на некоторых устройствах может ускорить загрузку",
+                "zh": "如果开启，模组运行时将不会显示加载屏幕，或许可以在一些设备商提高加载速度"
+            },
+            "index": 0
+        },
+
+        "developer_mode": {
+            "name": {
+                "en": "Developer Mode",
+                "ru": "Режим разработчика",
+                "zh": "开发人员模式"
+            },
+            "description": {
+                "en": "Simplifies mods development, e.g. allows to spend items even in Creative",
+                "ru": "Упрощает разработки модов, например, позволяет тратить предметы в Творческом режиме",
+                "zh": "简化模组开发，例如，允许在创造模式下消耗物品"
+            },
+            "index": 1
+        },
+
+        "gameplay": {
+            "name": {
+                "en": "Gameplay",
+                "ru": "Геймплей",
+                "zh": "游戏过程"
+            },
+            "collapsible": false,
+            "index": 2
+        },
+
+        "gameplay.use_legacy_workbench_override": {
+            "name": {
+                "en": "Use legacy workbench UI",
+                "ru": "Использовать старый интерфейс верстака",
+                "zh": "使用旧版工作台 UI"
+            },
+            "description": {
+                "en": "Returns old workbench UI override, enable if vanilla workbench does not function correctly with some modded recipes",
+                "ru": "Возвращает старую замену интерфейса верстака, включите, если ванильный верстак работает некорректно с какими то рецептами из модов",
+                "zh": "返回旧的工作台 UI 覆盖，如果 vanilla 工作台在某些修改后的配方中无法正常运行，则启用"
+            }
+        },
+
+        "performance": {
+            "name": {
+                "en": "Performance",
+                "ru": "Производительность",
+                "zh": "性能"
+            },
+            
+            "collapsible": false,
+            "index": 3
+        },
+
+        "threading": {
+            "name": {
+                "en": "Threading",
+                "ru": "Потоки",
+                "zh": "线程"
+            },
+            
+            "collapsible": "false",
+            "index": 4
+        },
+
+        "background": {
+            "name": {
+                "en": "Background",
+                "ru": "Работа в фоне",
+                "zh": "后台"
+            },
+            "collapsible": false,
+            "index": 5
+        },
+
+        "network": {
+            "name": {
+                "en": "Network Settings",
+                "ru": "Настройки Сетевой Игры",
+                "zh": "网络设置"
+            },
+            "collapsible": false,
+            "index": 6
+        },
+
+        "performance.server_thread_priority": {
+            "displayIf": "false"
+        },
+
+        "performance.threading": {
+            "displayIf": "false"
+        },
+
+        
+        "performance.time_based_limit": {
+            "name": {
+                "en": "Time-Based Update Limit",
+                "ru": "Ограничение обновлений по времени",
+                "zh": "基于时间限制更新"
+            },
+            "description": {
+                "en": "If this option is on, tick time of all mods will be limited by specified time, otherwise updates count will be limited",
+                "ru": "Если эта опция включена, количество обновлений модов в тик будет ограничено временем выполнения, иначе количеством обновлённых объектов",
+                "zh": "如果开启该选项，所以模组的更新时间都将被限制在某个特定时间内，否则更新次数将允许无穷大"
+            },
+            "index": 7
+        },
+
+        "performance.max_update_count": {
+            "name": {
+                "en": "Max Updates Per Tick",
+                "ru": "Максимум обновлений в тик",
+                "zh": "每刻最大的更新次数"
+            },
+            "index": 8,
+            "displayIf": "!performance.time_based_limit",
+            "type": "SeekBar",
+            "min": 16,
+            "max": 512
+        },
+        
+        "performance.max_update_time": {
+            "name": {
+                "en": "Max Tick Time",
+                "ru": "Максимальное время тика",
+                "zh": "每次更新的最长时间"
+            },
+            "index": 9,
+            "displayIf": "performance.time_based_limit",
+            "type": "SeekBar",
+            "min": 10,
+            "max": 120
+        },
+
+        
+        "threading.advanced": {
+            "name": {
+                "en": "Advanced Thread Priority Setup",
+                "ru": "Расширенные настройки приоритета потока",
+                "zh": "建立高级线程优先级"
+            },
+            "description": {
+                "en": "Higher server thread priority means more stable TPS (that means game will work on normal speed and respond normally), but can cause freezes and lower overall FPS",
+                "ru": "Более высокий приоритет серверного потока стабилизирует количество тиков в секунду (это означает более стабильную работу и время ответа), однако это может вызвать фризы и снизить FPS",
+                "zh": "更高的服务端线程优先级意味着更稳定的 TPS（这意味着游戏将在一个更常规的速度下工作，并且响应事件时更加正常），但是可能会导致线程冻结和更低的平均 FPS 值"
+            },
+            "index": 10
+        },
+        
+        "threading.priority_simple": {
+            "name": {
+                "en": "Server Thread Priority",
+                "ru": "Приоритет серверного потока",
+                "zh": "服务端线程优先级"
+            },
+            "index": 11,
+            "displayIf": "!threading.advanced",
+            "type": "SeekBar",
+            "min": 1,
+            "max": 40
+        },
+
+        "threading.priority_low": {
+            "name": {
+                "en": "Low Server Thread Priority",
+                "ru": "Нижний приоритет серверного потока",
+                "zh": "低服务端线程优先级"
+            },
+            "index": 12,
+            "displayIf": "threading.advanced",
+            "type": "SeekBar",
+            "min": 1,
+            "max": 40
+        },
+        
+        "threading.priority_high": {
+            "name": {
+                "en": "High Server Thread Priority",
+                "ru": "Верхний приоритет серверного потока",
+                "zh": "高服务端线程优先级"
+            },
+            "index": 13,
+            "displayIf": "threading.advanced",
+            "type": "SeekBar",
+            "min": 1,
+            "max": 40
+        },
+        
+        "threading.threshold_fps": {
+            "name": {
+                "en": "Threshold FPS",
+                "ru": "Пороговый FPS",
+                "zh": "FPS 阈值"
+            },
+            "description": {
+                "en": "While FPS is lower, than this threshold, server thread will run on low priority, otherwise high priority will be set",
+                "ru": "Пока FPS ниже этого порога, серверный поток будет работать на нижним приоритете, иначе будет установлен верхний приоритет",
+                "zh": "当 FPS 比该阈值还要小时，服务端线程将以一个低优先级来运行，否则将以设置好的高优先级运行"
+            },
+            "index": 14,
+            "type": "SeekBar",
+            "min": 15,
+            "max": 60
+        },
+
+        "threading.additional_thread_count": {
+            "name": {
+                "en": "Additional Thread Count",
+                "ru": "Количество дополнительных потоков",
+                "zh": "更多的线程数"
+            },
+            "description": {
+                "en": "Additional ticking threads are experemental feature and can be unstable. On devices with many CPU cores they can increase perfomance on high load",
+                "ru": "Дополнительные потоки являются эксперементальной настройкой. На мощных устройствах улучшить производительность при большой нагрузке",
+                "zh": "更多的更新线程数是一个实验性功能，并且可能会不稳定。在某些多 CPU 核心设备上，他们可能会高负载地提升性能"
+            },
+            "index": 15,
+            "type": "SeekBar",
+            "min": 0,
+            "max": 7           
+        },
+
+        "threading.additional_thread_priority": {
+            "name": {
+                "en": "Additional Thread Priority",
+                "ru": "Приоритет дополнительных потоков",
+                "zh": "更多的线程优先级"
+            },
+            "index": 16,
+            "type": "SeekBar",
+            "min": 1,
+            "max": 40
+        },
+
+        "background.auto_save": {
+            "name": {
+                "en": "Auto-Save",
+                "ru": "Автосохранение",
+                "zh": "自动保存"
+            },
+            "description": {
+                "en": "Auto-Save allows you to keep data if the game is terminated incorrectly",
+                "ru": "Автосохранение позволяет сохранить данные, если игра завершает работу некорректно",
+                "zh": "自动保存允许你在游戏突然错误终止时保留先前的数据"
+            },
+            "index": 17
+        },
+        
+        "background.auto_save_period": {
+            "name": {
+                "en": "Auto-Save Period",
+                "ru": "Период автосохранения",
+                "zh": "自动保存优先级"
+            },
+            "description": {
+                "en": "Seconds between two auto-save runs",
+                "ru": "Время в секундах между запусками автосохранения",
+                "zh": "两次运行自动保存之间的秒数"
+            },
+            "index": 18,
+            "displayIf": "background.auto_save",
+            "type": "SeekBar",
+            "min": 20,
+            "max": 180
+        },
+
+        "network.enable_socket_server": {
+            "name": {
+                "en": "Enable Socket Server",
+                "ru": "Включить Сокет-Сервер",
+                "zh": "启用套接字服务器"
+            },
+            "description": {
+                "en": "Socket server allows people on local network to join your world via socket protocol",
+                "ru": "Сокет-сервер позволяет игрокам в локальной подключаться к вашему миру с использованием сокетов",
+                "zh": "套接字服务器允许人们在本地网络上通过套接字协议加入你的世界"
+            },
+            "index": 19
+        },
+
+        "network.remote_native_protocol_prioritized": {
+            "name": {
+                "en": "Prioritize Native Network Protocol",
+                "ru": "Использовать Нативный Протокол",
+                "zh": "优先化本地网络协议"
+            },
+            "description": {
+                "en": "Try to connect to remote world via native protocol first (by default socket protocol will be tried first)",
+                "ru": "В приоритете выполнять подключение по нативному протоколу (по умолчанию больший приоритет у протокола на основе сокетов)",
+                "zh": "尝试通过本地协议连接到远程世界（默认是先尝试套接字协议）"
+            },
+            "index": 20
+        },
+
+        "network.local_native_protocol_forced": {
+            "name": {
+                "en": "(For developers) \nForce Local Native Protocol",
+                "ru": "(Для разработчиков) \nФорсировать Локальный Нативный Протокол",
+                "zh": "（开发人员用）强制本地化本地协议"
+            },
+            "description": {
+                "en": "Use native protocol instead of direct channel for data transfer between local client and server. This option is only for developers, do not use it for your normal gameplay.",
+                "ru": "Использовать нативный протокол для связи между локальным клиентом и сервером. Эта настройка нужна только для отладки модов и движка, не используйте ее для игры.",
+                "zh": "使用本地协议替代直连通道在客户端和服务端之间进行数据传输。该选项仅为开发人员提供。请勿在你的正常游戏中使用。"
+            },
+            "index": 21
+        },
+
+        "create_debug_dump": {
+            "name": {
+                "en": "(For developers) \nDump additional information",
+                "ru": "(Для разработчиков) \nСоздавать дамп с дополнительной информацией"
+            },
+            "description": {
+                "en": "Dump various additional development-related information during world load, dump files are stored with logs",
+                "ru": "Создавать дамп с различной информацией для разработчиков при загрузке мира, файлы дампов хранятся вместе с логами"
+            },
+            "index": 22
+        }
+    }
+}

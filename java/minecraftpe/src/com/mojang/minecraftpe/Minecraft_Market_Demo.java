@@ -1,0 +1,18 @@
+package com.mojang.minecraftpe;
+
+import android.content.Intent;
+import android.net.Uri;
+
+public class Minecraft_Market_Demo extends MainActivity {
+    @Override // com.mojang.minecraftpe.MainActivity
+    public void buyGame() {
+        Uri buyLink = Uri.parse("market://details?id=com.mojang.minecraftpe");
+        Intent marketIntent = new Intent("android.intent.action.VIEW", buyLink);
+        startActivity(marketIntent);
+    }
+
+    @Override // com.mojang.minecraftpe.MainActivity
+    protected boolean isDemo() {
+        return true;
+    }
+}

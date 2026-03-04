@@ -1,0 +1,79 @@
+{
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "clipToPadding": false,
+    "paddingBottom": "10dp",
+    "children": [
+        {
+            "type": "CardView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "#FFFFFF",
+            "elevation": 15,
+            "children": [
+                {
+                    "type": "LinearLayout",
+                    "orientation": "horizontal",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginStart": "10dp",
+                    "layout_marginEnd": "10dp",
+                    "layout_marginTop": "10dp",
+                    "json_id": "layout",
+                    "children": [
+                        {
+                            "type": "ImageView",
+                            "layout_width": "70dp",
+                            "layout_height": "70dp",
+                            "layout_marginEnd": "16dp",
+                            "json_id": "image"
+                        },
+                        {
+                            "type": "LinearLayout",
+                            "orientation": "vertical",
+                            "layout_width": "0dp",
+                            "layout_height": "wrap_content",
+                            "layout_weight": "1",
+                            "children": [
+                                {
+                                    "type": "TextView",
+                                    "textColor": "black",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "layout_marginTop": "10dp",
+                                    "textSize": "18sp",
+                                    "json_id": "name"
+                                },
+                                {
+                                    "type": "TextView",
+                                    "textColor": "black",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "50dp",
+                                    "textSize": "14sp",
+                                    "json_id": "description"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ImageView",
+                            "json_id": "settings",
+                            "layout_width": "40dp",
+                            "layout_height": "40dp",
+                            "src": "@drawable/config"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "FrameLayout",
+            "orientation": "horizontal",
+            "layout_width": "match_parent",
+            "layout_height": "115dp",
+            "visibility": "gone",
+            "json_id": "banner"
+        }
+    ]
+}

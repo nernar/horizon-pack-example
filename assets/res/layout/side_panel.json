@@ -1,0 +1,130 @@
+{
+    "type": "LinearLayout",
+    "layout_width": "0dp",
+    "layout_height": "match_parent",
+    "orientation": "vertical",
+    "layout_weight": "1",
+    "children": [
+        {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginLeft": "8dp",
+            "layout_marginRight": "8dp",
+            "layout_marginBottom": "10dp",
+            "orienation": "horizontal",
+            "children": [
+                {
+                    "type": "ImageView",
+                    "layout_width": "40dp",
+                    "layout_height": "40dp",
+                    "layout_gravity": "center_vertical",
+                    "src": "@drawable/innercore"
+                },
+                {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginStart": "10dp",
+                    "gravity": "center_vertical",
+                    "layout_gravity": "center_vertical",
+                    "textColor": "black",
+                    "textSize": "18sp",
+                    "text": "@string/mods_manager"
+                }
+                
+            ]
+        },        
+        {
+            "type": "View",
+            "layout_width": "match_parent",
+            "layout_height": "1dp",
+            "background": "#d9d9d9"
+        },
+        {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "gravity": "center_vertical | start",
+            "padding": "10dp",
+            "paddingStart": "18dp",
+            "text": "@string/download_mods",
+            "tag": "download_mods",
+            "textColor": "black",
+            "textSize": "14sp",
+            "background": "white"
+        },
+        {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "gravity": "center_vertical | start",
+            "padding": "10dp",
+            "paddingStart": "18dp",
+            "text": "@string/my_mods",
+            "tag": "my_mods",
+            "textColor": "black",
+            "textSize": "14sp",
+            "background": "white"
+        },
+        {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "gravity": "center_vertical | start",
+            "padding": "10dp",
+            "paddingStart": "18dp",
+            "text": "@string/mod_packs",
+            "tag": "mod_packs",
+            "textColor": "black",
+            "textSize": "14sp",
+            "background": "white"
+        },
+        {
+            "type": "FrameLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "children": [
+                {
+                    "type": "TextView",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "gravity": "center_vertical | start",
+                    "padding": "10dp",
+                    "paddingStart": "18dp",
+                    "text": "@string/updates",
+                    "tag": "updates",
+                    "textColor": "black",
+                    "textSize": "14sp",
+                    "background": "white"
+                },
+                {
+                    "type": "TextView",
+                    "json_id": "updates_count",
+                    "visibility": "gone",
+                    "layout_width": "20dp",
+                    "layout_height": "20dp",
+                    "layout_marginEnd": "10dp",
+                    "layout_gravity": "center_vertical | right",
+                    "gravity": "center_horizontal",
+                    "background": "@drawable/update_dot",
+                    "textColor": "white",
+                    "textSize": "14sp"
+                }
+            ]
+        },
+        {
+            "type": "TextView",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "gravity": "center_vertical | start",
+            "padding": "10dp",
+            "paddingStart": "18dp",
+            "text": "@string/visit_website",
+            "json_id": "visitWebsite",
+            "textColor": "black",
+            "textSize": "14sp",
+            "background": "white"
+        }
+    ]
+}

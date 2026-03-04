@@ -1,0 +1,28 @@
+{
+	"game": "Minecraft PE",
+	"gameVersion": "0.10.5",
+	"pack": "Instant Referrer",
+	"packVersion": "1.2.1",
+	"packVersionCode": 4,
+	"developer": "Nernar",
+	"description": {
+		"en": "Lovely modding environments in single launcher with mobile multiverse.\nBuild: 0.10.5/blic (740100501)",
+		"ru": "Любимые среды для моддинга в едином лаунчере мобильной мультивселенной.\nСборка: 0.10.5/blic (740100501)"
+	},
+
+	"directories": [
+		"assets",
+		"java",
+		"native",
+		"so"
+	],
+
+	"keepDirectories": [
+		"innercore",
+		"modpacks",
+		"modpacks-archive"
+	],
+
+ 	"activity": "com.mojang.minecraftpe.MainActivity",
+ 	"environmentClass": "com.zhekasmirnov.mcpe161.EnvironmentSetup"
+}

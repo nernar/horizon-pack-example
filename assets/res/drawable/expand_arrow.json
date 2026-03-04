@@ -1,0 +1,19 @@
+{
+    "type": "selector",
+    "items": [
+        {
+            "state_empty": "true",
+            "type": "source",
+            "src": "@drawable/download"
+        },
+        {
+            "state_expanded": "true",
+            "type": "source",
+            "src": "@drawable/arrow_up"
+        },
+        {
+            "type": "source",
+            "src": "@drawable/arrow_down"
+        }
+    ]
+}

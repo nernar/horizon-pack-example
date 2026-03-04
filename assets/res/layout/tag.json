@@ -1,0 +1,22 @@
+{
+    "type": "FrameLayout",
+    "layout_width": "wrap_content",
+    "layout_height": "match_parent",
+    "children": [
+        {
+            "type": "TextView",
+            "json_id": "tag",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_gravity": "bottom",
+            "minWidth": "110dp",
+            "background": "#00008B",
+            "gravity": "center",
+            "textColor": "white",
+            "textSize": "18sp",
+            "paddingStart": "6dp",
+            "paddingEnd": "6dp",
+            "layout_marginEnd": "6dp"
+        } 
+    ]
+}

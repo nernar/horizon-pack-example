@@ -1,0 +1,25 @@
+{
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "paddingTop": "15dp",
+    "children": [
+        {
+            "type": "ImageView",
+            "layout_width": "wrap_content",
+            "layout_height": "match_parent",
+            "tag": "indicator"
+        },
+        {
+            "type": "TextView",
+            "textColor": "black",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textStyle": "bold",
+            "layout_margin": "6dp",
+            "paddingLeft": "5dp",
+            "textSize": "18sp",
+            "tag": "name"
+        }
+    ]
+}

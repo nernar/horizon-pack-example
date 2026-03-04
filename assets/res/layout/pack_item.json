@@ -1,0 +1,114 @@
+{
+    "type": "LinearLayout",
+    "orientation": "vertical",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "clipToPadding": false,
+    "paddingBottom": "10dp",
+    "children": [
+        {
+            "type": "CardView",
+            "json_id": "card",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "#FFFFFF",
+            "elevation": 15,
+            "children": [
+                {
+                    "type": "LinearLayout",
+                    "orientation": "horizontal",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginStart": "10dp",
+                    "json_id": "layout",
+                    "children": [
+                        {
+                            "type": "LinearLayout",
+                            "orientation": "vertical",
+                            "layout_width": "0px",
+                            "layout_weight": "1",
+                            "layout_height": "match_parent",
+                            "children": [
+                                {
+                                    "type": "TextView",
+                                    "textColor": "black",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "layout_marginTop": "10dp",
+                                    "textSize": "22sp",
+                                    "json_id": "name"
+                                },
+                                {
+                                    "type": "TextView",
+                                    "textColor": "black",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "50dp",
+                                    "textSize": "14sp",
+                                    "json_id": "description"
+                                },
+                                {
+                                    "type": "LinearLayout",
+                                    "json_id": "tags",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "match_parent",
+                                    "layout_marginBottom": "10dp",
+                                    "orientation": "horizontal",
+                                    "children": [
+                                        {
+                                            "type": "TextView",
+                                            "json_id": "selected",
+                                            "visibility": "gone",
+                                            "layout_width": "wrap_content",
+                                            "layout_height": "wrap_content",
+                                            "layout_gravity": "bottom",
+                                            "minWidth": "110dp",
+                                            "background": "#00AA00",
+                                            "gravity": "center",
+                                            "textColor": "white",
+                                            "textSize": "18sp",
+                                            "textAllCaps": true,
+                                            "paddingStart": "6dp",
+                                            "paddingEnd": "6dp",
+                                            "layout_marginEnd": "6dp",
+                                            "text": "@string/selected"
+                                        },
+                                        {
+                                            "type": "TextView",
+                                            "json_id": "mod_count",
+                                            "layout_width": "wrap_content",
+                                            "layout_height": "wrap_content",
+                                            "layout_gravity": "bottom",
+                                            "minWidth": "110dp",
+                                            "background": "#00008B",
+                                            "gravity": "center",
+                                            "textColor": "white",
+                                            "textSize": "18sp",
+                                            "paddingStart": "6dp",
+                                            "paddingEnd": "6dp",
+                                            "layout_marginEnd": "6dp"
+                                        } 
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ImageView",
+                            "layout_width": "150dp",
+                            "layout_height": "150dp",
+                            "layout_paddingStart": "10dp",
+                            "json_id": "image"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "FrameLayout",
+            "orientation": "horizontal",
+            "layout_width": "match_parent",
+            "layout_height": "115dp",
+            "visibility": "gone",
+            "json_id": "banner"
+        }        
+    ]
+}

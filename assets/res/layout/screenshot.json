@@ -1,0 +1,13 @@
+{
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "children": [
+        {
+            "type": "ImageView",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "json_id": "image"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "type": "shape",
+    "shape": "rectangle",
+    
+    "solid": {
+        "color": "white"
+    },
+
+    "corners": {
+        "radius": "3dp"
+    },
+
+    "stroke": {
+        "width": "3dp",
+        "color": "#008000"
+    }
+}

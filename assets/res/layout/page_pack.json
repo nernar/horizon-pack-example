@@ -1,0 +1,284 @@
+{
+    "type": "ScrollView",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "children": [
+        {
+            "type": "LinearLayout",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "vertical",
+            "children": [
+                {
+                    "type": "include",
+                    "name": "include_progress"
+                },
+                {
+                    "type": "LinearLayout",
+                    "json_id": "page",
+                    "visibility": "gone",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "children": [
+                        {
+                            "type": "FrameLayout",
+                            "layout_width": "match_parent",
+                            "layout_height": "180dp",
+                            "layout_marginBottom": "5dp",
+                            "children": [
+                                {
+                                    "type": "ImageView",
+                                    "json_id": "screenshot",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "match_parent"
+                                },
+                                {
+                                    "type": "View",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "match_parent",
+                                    "background": "#33000000"
+                                },
+                                {
+                                    "type": "ImageView",
+                                    "json_id": "options",
+                                    "layout_width": "25dp",
+                                    "layout_height": "25dp",
+                                    "src": "@drawable/options_white",
+                                    "layout_gravity": "end|top",
+                                    "layout_marginTop": "21dp",
+                                    "layout_marginEnd": "18dp"
+                                },
+                                {
+                                    "type": "LinearLayout",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "match_parent",
+                                    "layout_alignParentTop": "true",
+                                    "orientation": "vertical",
+                                    "children": [
+                                        {
+                                            "type": "TextView",
+                                            "json_id": "title",
+                                            "layout_width": "wrap_content",
+                                            "layout_height": "50dp",
+                                            "layout_weight": "1",
+                                            "layout_marginStart": "9dp",
+                                            "layout_marginBottom": "7dp",
+                                            "gravity": "start|bottom",
+                                            "textColor": "white",
+                                            "textSize": "22sp"
+                                        },
+                                        {
+                                            "type": "TextView",
+                                            "json_id": "author",
+                                            "layout_width": "wrap_content",
+                                            "layout_height": "wrap_content",
+                                            "layout_marginStart": "9dp",
+                                            "layout_marginBottom": "12dp",
+                                            "gravity": "start|bottom",
+                                            "textColor": "white",
+                                            "textSize": "14sp"
+                                        },
+                                        {
+                                            "type": "RecyclerView",
+                                            "json_id": "tagList",
+                                            "layout_width": "match_parent",
+                                            "layout_height": "38dp",
+                                            "layout_marginBottom": "12dp",
+                                            "layout_marginStart": "12dp"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "include",
+                            "name": "include_statistics"
+                        },
+                        {
+                            "type": "LinearLayout",
+                            "json_id": "download_progress_layout",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "visibility": "gone",
+                            "orientation": "vertical",
+                            "children": [
+                                {
+                                    "type": "TextView",
+                                    "json_id": "progress_label",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "wrap_content",
+                                    "layout_marginStart": "18dp",
+                                    "layout_marginTop": "7dp",
+                                    "layout_marginEnd": "18dp",
+                                    "layout_marginBottom": "7dp",
+                                    "textSize": "18sp",
+                                    "textColor": "black"
+                                },
+                                {
+                                    "type": "ProgressBar",
+                                    "json_id": "progress_bar",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "wrap_content",
+                                    "layout_marginStart": "10dp",
+                                    "layout_marginEnd": "18dp",
+                                    "style": "?android:attr/progressBarStyleHorizontal"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "LinearLayout",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "children": [
+                                {                            
+                                    "type": "TextView",
+                                    "json_id": "install",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "minWidth": "200dp",
+                                    "layout_margin": "10dp",
+                                    "paddingStart": "18dp",
+                                    "paddingEnd": "18dp",
+                                    "paddingTop": "10dp",
+                                    "paddingBottom": "10dp",
+                                    "gravity": "center|center_vertical",
+                                    "background": "@drawable/button_success",
+                                    "textColor": "white",
+                                    "textSize": "22sp",
+                                    "text": "@string/install",
+                                    "textAllCaps": "true"
+                                },
+                                {                            
+                                    "type": "TextView",
+                                    "json_id": "update",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "minWidth": "200dp",
+                                    "layout_margin": "10dp",
+                                    "paddingStart": "18dp",
+                                    "paddingEnd": "18dp",
+                                    "paddingTop": "10dp",
+                                    "paddingBottom": "10dp",
+                                    "gravity": "center|center_vertical",
+                                    "background": "@drawable/button_success",
+                                    "textColor": "white",
+                                    "textSize": "22sp",
+                                    "text": "@string/update",
+                                    "textAllCaps": "true"
+                                },
+                                {                            
+                                    "type": "TextView",
+                                    "json_id": "select",
+                                    "visibility": "gone",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "minWidth": "200dp",
+                                    "layout_margin": "10dp",
+                                    "paddingStart": "18dp",
+                                    "paddingEnd": "18dp",
+                                    "paddingTop": "10dp",
+                                    "paddingBottom": "10dp",
+                                    "gravity": "center|center_vertical",
+                                    "background": "@drawable/button_success",
+                                    "textColor": "white",
+                                    "textSize": "22sp",
+                                    "text": "@string/select",
+                                    "textAllCaps": "true"
+                                },
+                                {                            
+                                    "type": "TextView",
+                                    "json_id": "delete",
+                                    "visibility": "gone",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "minWidth": "200dp",
+                                    "layout_margin": "10dp",
+                                    "paddingStart": "18dp",
+                                    "paddingEnd": "18dp",
+                                    "paddingTop": "10dp",
+                                    "paddingBottom": "10dp",
+                                    "gravity": "center|center_vertical",
+                                    "background": "@drawable/button_danger",
+                                    "textColor": "white",
+                                    "textSize": "22sp",
+                                    "text": "@string/delete",
+                                    "textAllCaps": "true"
+                                },
+                                {                            
+                                    "type": "TextView",
+                                    "json_id": "selected",
+                                    "visibility": "gone",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "minWidth": "200dp",
+                                    "layout_margin": "10dp",
+                                    "paddingStart": "18dp",
+                                    "paddingEnd": "18dp",
+                                    "paddingTop": "10dp",
+                                    "paddingBottom": "10dp",
+                                    "gravity": "center|center_vertical",
+                                    "background": "@drawable/button_status",
+                                    "textColor": "#008000",
+                                    "textSize": "22sp",
+                                    "text": "@string/selected",
+                                    "textAllCaps": "true"
+                                },
+                                {                            
+                                    "type": "TextView",
+                                    "json_id": "mods",
+                                    "visibility": "gone",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "minWidth": "200dp",
+                                    "layout_margin": "10dp",
+                                    "paddingStart": "18dp",
+                                    "paddingEnd": "18dp",
+                                    "paddingTop": "10dp",
+                                    "paddingBottom": "10dp",
+                                    "gravity": "center|center_vertical",
+                                    "background": "@drawable/button_success",
+                                    "textColor": "white",
+                                    "textSize": "22sp",
+                                    "text": "@string/mods",
+                                    "textAllCaps": "true"
+                                },
+                                {                            
+                                    "type": "TextView",
+                                    "json_id": "webpage",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "minWidth": "200dp",
+                                    "layout_margin": "10dp",
+                                    "paddingStart": "18dp",
+                                    "paddingEnd": "18dp",
+                                    "paddingTop": "10dp",
+                                    "paddingBottom": "10dp",
+                                    "gravity": "center|center_vertical",
+                                    "background": "@drawable/button_success",
+                                    "textSize": "22sp",
+                                    "textColor": "white",
+                                    "text": "@string/details",
+                                    "textAllCaps": "true"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TextView",
+                            "json_id": "description",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "layout_marginStart": "18dp",
+                            "layout_marginTop": "7dp",
+                            "layout_marginEnd": "18dp",
+                            "layout_marginBottom": "7dp",
+                            "textSize": "14sp",
+                            "textColor": "black",
+                            "text": "@string/loading"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

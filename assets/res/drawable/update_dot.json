@@ -1,0 +1,7 @@
+{
+    "type": "shape",
+    "shape": "oval",
+    "solid": {
+        "color": "#FF0000"
+    }
+}

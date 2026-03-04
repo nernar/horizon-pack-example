@@ -1,0 +1,27 @@
+{
+    "type": "vector",
+    "viewportWidth": "150",
+    "viewportHeight": "40",
+    "width": "150dp",
+    "height": "40dp",
+    "paths": [
+        {
+            "pathData": "M0 0H140V40H0V0Z",
+            "fillColor": "#2895F1"
+        }
+    ],
+    "groups": [
+        {
+            "rotation": "-45",
+            "translateX": "24.1056",
+            "translateY": "100.196",
+            "paths": [
+                {
+                    "pathData": "M121 9H145V33H121V9Z",
+                    "fillColor": "#2895F1"
+                }
+            ]
+        }
+    ]
+    
+}

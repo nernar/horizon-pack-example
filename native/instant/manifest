@@ -1,0 +1,12 @@
+{
+    "shared": {
+        "name": "instant",
+		"include": [
+			"includes/shared"
+		]
+    },
+    "depends": [
+    	"callbacks",
+    	"nativejs"
+	]
+}

@@ -1,0 +1,67 @@
+{
+    "type": "UnifiedNativeAdView",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "background": "#eeeeee",
+    "children": [
+        {
+            "type": "LinearLayout",
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "layout_marginTop": "10dp",
+            "children": [
+                {
+                    "type": "TextView",
+                    "textColor": "black",
+                    "layout_width": "match_parent",
+                    "textSize": "14sp",
+                    "layout_marginStart": "10dp",
+                    "text": "Advertisement"
+                },
+                {
+                    "type": "LinearLayout",
+                    "orientation": "horizontal",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginStart": "10dp",
+                    "layout_marginEnd": "10dp",
+                    "children": [
+                        {
+                            "type": "ImageView",
+                            "layout_width": "70dp",
+                            "layout_height": "70dp",
+                            "layout_marginEnd": "16dp",
+                            "json_id": "image"
+                        },
+                        {
+                            "type": "LinearLayout",
+                            "orientation": "vertical",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "children": [
+                                {
+                                    "type": "TextView",
+                                    "textColor": "black",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "layout_marginTop": "10dp",
+                                    "textSize": "18sp",
+                                    "json_id": "name"
+                                },
+                                {
+                                    "type": "TextView",
+                                    "textColor": "black",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "50dp",
+                                    "textSize": "14sp",
+                                    "json_id": "description"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

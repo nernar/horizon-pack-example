@@ -1,0 +1,20 @@
+{
+    "type": "FrameLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "children": [
+        {
+            "type": "TextView",
+            "layout_width": "wrap_content",
+            "layout_height": "match_parent",
+            "textColor": "black",
+            "textSize": "18sp",
+            "layout_margin": "18dp",
+            "text": "@string/empty_list"
+        },
+        {
+            "type": "include",
+            "name": "recycler_list"
+        }
+    ]
+}

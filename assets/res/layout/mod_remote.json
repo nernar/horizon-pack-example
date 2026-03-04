@@ -1,0 +1,271 @@
+{
+    "type": "ScrollView",
+    "layout_width": "match_parent",
+    "layout_height": "wrap_content",
+    "children": [
+        {
+            "type": "LinearLayout",
+            "children": [
+                {
+                    "type": "include",
+                    "name": "include_progress"
+                },
+                {
+                    "type": "LinearLayout",
+                    "json_id": "page",
+                    "visibility": "gone",
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "orientation": "vertical",
+                    "children": [
+                        {
+                            "type": "LinearLayout",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "orientation": "horizontal",
+                            "children": [
+                                {
+                                    "type": "ImageView",
+                                    "json_id": "icon",
+                                    "layout_width": "150dp",
+                                    "layout_height": "150dp",
+                                    "layout_margin": "10dp",
+                                    "layout_marginStart": "10dp",
+                                    "layout_marginEnd": "16dp"
+                                },
+                                {
+                                    "type": "LinearLayout",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "match_parent",
+                                    "orientation": "vertical",
+                                    "layout_marginTop": "21dp",
+                                    "children": [
+                                        {
+                                            "type": "TextView",
+                                            "json_id": "title",
+                                            "layout_width": "wrap_content",
+                                            "layout_height": "wrap_content",
+                                            "layout_marginRight": "9dp",
+                                            "gravity": "start|center_vertical",
+                                            "layout_marginBottom": "7dp",
+                                            "textColor": "black",
+                                            "textSize": "22sp"
+                                        },
+                                        {
+                                            "type": "TextView",
+                                            "json_id": "author",
+                                            "layout_width": "wrap_content",
+                                            "layout_height": "wrap_content",
+                                            "gravity": "start|center_vertical",
+                                            "layout_marginBottom": "12dp",
+                                            "textColor": "black",
+                                            "textSize": "14sp",
+                                            "background": "white"
+                                        },
+                                        {
+                                            "type": "RecyclerView",
+                                            "json_id": "tagList",
+                                            "layout_width": "wrap_content",
+                                            "layout_height": "38dp"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "include",
+                            "name": "include_statistics"
+                        },
+                        {
+                            "type": "LinearLayout",
+                            "json_id": "progressLayout",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "visibility": "gone",
+                            "orientation": "vertical",
+                            "children": [
+                                {
+                                    "type": "TextView",
+                                    "json_id": "progressLabel",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "wrap_content",
+                                    "layout_marginStart": "18dp",
+                                    "layout_marginTop": "7dp",
+                                    "layout_marginEnd": "18dp",
+                                    "layout_marginBottom": "7dp",
+                                    "textSize": "18sp",
+                                    "textColor": "black"
+                                },
+                                {
+                                    "type": "ProgressBar",
+                                    "json_id": "progressBar",
+                                    "layout_width": "match_parent",
+                                    "layout_height": "wrap_content",
+                                    "layout_marginStart": "10dp",
+                                    "layout_marginEnd": "18dp",
+                                    "style": "?android:attr/progressBarStyleHorizontal"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "LinearLayout",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "orientation": "horizontal",
+                            "children": [
+                                {                            
+                                    "type": "TextView",
+                                    "json_id": "install",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "layout_margin": "10dp",
+                                    "paddingStart": "18dp",
+                                    "paddingEnd": "18dp",
+                                    "paddingTop": "10dp",
+                                    "paddingBottom": "10dp",
+                                    "gravity": "start|center_vertical",
+                                    "background": "#1BDB68",
+                                    "textColor": "white",
+                                    "textSize": "18sp",
+                                    "text": "@string/install",
+                                    "textAllCaps": "true"
+                                },
+                                {                            
+                                    "type": "TextView",
+                                    "json_id": "webpage",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "wrap_content",
+                                    "layout_margin": "10dp",
+                                    "paddingStart": "18dp",
+                                    "paddingEnd": "18dp",
+                                    "paddingTop": "10dp",
+                                    "paddingBottom": "10dp",
+                                    "gravity": "start|center_vertical",
+                                    "background": "#1BDB68",
+                                    "textColor": "white",
+                                    "textSize": "18sp",
+                                    "text": "@string/details",
+                                    "textAllCaps": "true"
+                                },
+                                {                            
+                                    "type": "ImageButton",
+                                    "json_id": "delete",
+                                    "visibility": "gone",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "match_parent",
+                                    "gravity": "start|center_vertical",
+                                    "background": "#ffffff",
+                                    "src": "@drawable/trash",
+                                    "scaleType": "fitCenter"
+                                },
+                                {                            
+                                    "type": "ImageButton",
+                                    "json_id": "config",
+                                    "visibility": "gone",
+                                    "layout_width": "wrap_content",
+                                    "layout_height": "match_parent",
+                                    "gravity": "start|center_vertical",
+                                    "background": "#ffffff",
+                                    "src": "@drawable/config",
+                                    "scaleType": "fitCenter"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TextView",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "layout_marginStart": "18dp",
+                            "layout_marginTop": "7dp",
+                            "layout_marginEnd": "18dp",
+                            "layout_marginBottom": "7dp",
+                            "textSize": "18sp",
+                            "textColor": "black",
+                            "text": "@string/description"
+                        },
+                        {
+                            "type": "TextView",
+                            "json_id": "descrition",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "layout_marginStart": "18dp",
+                            "layout_marginTop": "7dp",
+                            "layout_marginEnd": "18dp",
+                            "layout_marginBottom": "7dp",
+                            "textSize": "14sp",
+                            "textColor": "black",
+                            "text": "@string/loading"
+                        },
+                        {
+                            "type": "TextView",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "layout_marginStart": "18dp",
+                            "layout_marginTop": "7dp",
+                            "layout_marginEnd": "18dp",
+                            "layout_marginBottom": "7dp",
+                            "textSize": "18sp",
+                            "textColor": "black",
+                            "text": "@string/screenshots"
+                        },
+                        {
+                            "type": "ViewPager",
+                            "layout_width": "match_parent",
+                            "layout_height": "300dp",
+                            "json_id": "screenshots"
+                        },
+                        {
+                            "type": "TextView",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "layout_marginStart": "18dp",
+                            "layout_marginTop": "7dp",
+                            "layout_marginEnd": "18dp",
+                            "layout_marginBottom": "7dp",
+                            "textSize": "18sp",
+                            "textColor": "black",
+                            "text": "@string/comments"
+                        },
+                        {
+                            "type": "TextView",
+                            "json_id": "no_comments",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "layout_marginStart": "18dp",
+                            "layout_marginTop": "7dp",
+                            "layout_marginEnd": "18dp",
+                            "layout_marginBottom": "7dp",
+                            "textSize": "14sp",
+                            "textColor": "black",
+                            "text": "@string/no_comments"
+                        },
+                        {
+                            "type": "LinearLayout",
+                            "json_id": "comments",
+                            "layout_width": "match_parent",
+                            "layout_height": "wrap_content",
+                            "orientation": "vertical"
+                        },
+                        {                            
+                            "type": "TextView",
+                            "json_id": "leave_comment",
+                            "layout_width": "wrap_content",
+                            "layout_height": "wrap_content",
+                            "layout_margin": "10dp",
+                            "paddingStart": "25dp",
+                            "paddingEnd": "25dp",
+                            "paddingTop": "7dp",
+                            "paddingBottom": "7dp",                 
+                            "gravity": "start|center_vertical",
+                            "background": "#1BDB68",
+                            "textColor": "white",
+                            "textSize": "18sp",
+                            "text": "@string/leave_comment",
+                            "textAllCaps": "true"
+                        } 
+                    ]
+                }
+            ]
+        }
+    ]
+}

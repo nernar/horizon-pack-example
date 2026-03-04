@@ -1,0 +1,70 @@
+{
+    "type": "LinearLayout",
+    "layout_width": "match_parent",
+    "layout_height": "match_parent",
+    "orientation": "vertical",
+    "children": [
+        {
+            "type": "TextView",
+            "json_id": "title",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "layout_marginStart": "18dp",
+            "layout_marginTop": "7dp",
+            "layout_marginEnd": "18dp",
+            "layout_marginBottom": "7dp",
+            "textSize": "22sp",
+            "textColor": "black"
+        },
+        {
+            "type": "LinearLayout",
+            "json_id": "remote_filters",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "orientation": "horizontal",
+            "children": [
+                {
+                    "type": "EditText",
+                    "json_id": "search",
+                    "layout_width": "0dp",
+                    "layout_height": "wrap_content",
+                    "layout_weight": 1,
+                    "inputType": "text",
+                    "imeOptions": "flagNoExtractUi",
+                    "hint": "@string/search",
+                    "textColorHint": "#999999",
+                    "textColor": "black",
+                    "drawableLeft": "@drawable/search"
+                },
+                {
+                    "type": "Spinner",
+                    "json_id": "category",
+                    "layout_width": "0dp",
+                    "layout_height": "wrap_content",
+                    "textColor": "black",
+                    "layout_weight": 1
+                }
+            ]
+        },
+        {
+            "type": "FrameLayout",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "children": [
+                {
+                    "type": "TextView",
+                    "layout_width": "wrap_content",
+                    "layout_height": "match_parent",
+                    "textColor": "black",
+                    "textSize": "18sp",
+                    "layout_marginStart": "18dp",
+                    "text": "@string/empty_list"
+                },
+                {
+                    "type": "include",
+                    "name": "recycler_list"
+                }
+            ]
+        }
+    ]
+}

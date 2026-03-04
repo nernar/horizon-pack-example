@@ -1,0 +1,10 @@
+{
+    "type": "shape",
+    "shape": "rectangle",
+    "solid": {
+        "color": "#FF0000"
+    },
+    "corners": {
+        "radius": "3dp"
+    }
+}

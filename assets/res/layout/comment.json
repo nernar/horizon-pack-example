@@ -1,0 +1,31 @@
+{
+    "type": "LinearLayout",
+    "layout_width": "wrap_content",
+    "layout_height": "wrap_content",
+    "orientation": "vertical",
+    "layout_margin": "8dp",
+    "children": [
+        {
+            "type": "TextView",
+            "json_id": "name",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "gravity": "center",
+            "textColor": "black",
+            "textSize": "14sp",
+            "textStyle": "bold",
+            "paddingStart": "6dp",
+            "paddingEnd": "6dp"
+        },
+        {
+            "type": "TextView",
+            "json_id": "comment",
+            "layout_width": "wrap_content",
+            "layout_height": "match_parent",
+            "textColor": "black",
+            "textSize": "14sp",
+            "paddingStart": "6dp",
+            "paddingEnd": "6dp"
+        }
+    ]
+}

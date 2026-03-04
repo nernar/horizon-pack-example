@@ -1,0 +1,8 @@
+{
+    "shared": {
+        "name": "callbacks",
+		"include": [
+			"includes"
+		]
+    }
+}
