@@ -1,0 +1,8 @@
+{
+	"source-dirs": ["src"],
+	"library-dirs": ["libs"],
+	"options": [
+		"-cp", "/sdcard/games/horizon/packs/Instant_Referrer/java/httpcore-4.4.16.jar",
+		"-cp", "/sdcard/games/horizon/packs/Instant_Referrer/java/httpclient-4.5.14.jar"
+	]
+}

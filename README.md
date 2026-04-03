@@ -1,6 +1,6 @@
 # Horizon Pack Example
 
-This repository serves as a fully functional source template for a Horizon modpack. Horizon acts as the runtime environment, interpreting this directory structure, optionally compiling Java/C++ sources on the fly (only on 32bit for now).
+This repository serves as a fully functional source template for a Horizon pack. Horizon acts as the runtime environment, interpreting this directory structure, optionally compiling Java/C++ sources on the fly (only on 32bit for now).
 
 ## Core Concepts
 
